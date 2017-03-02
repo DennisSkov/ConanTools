@@ -194,7 +194,7 @@ class CEModDownloader():
         # TODO Need to handle exceptions here
         if not os.path.isdir(conan_mod_folder):
             print("[+] Creating Directory: " + conan_mod_folder)
-            #os.mkdir(conan_mod_folder)
+            os.mkdir(conan_mod_folder)
 
         print("[+] Moving Mod Files To: " + output_dir)
         for pak_file in glob.iglob(source_dir + '\*.pak'):
